@@ -232,7 +232,13 @@ var Analytics = {
                 for (var i=0; i<result.data.length; i++)
                     result.totals.visits += parseInt(result.data[i].visits);
             }
-
+            if ((result.data.length > 0) && ("pageviews" in result.data[0])) {
+                result.totals.visits = 0;
+                for (var i=0; i<result.data.length; i++)
+                    result.totals.visits += parseInt(result.data[i].pageviews);
+            }
+            
+            
             if (_.startsWith(report.name, "device_model")) {
                 result.totals.device_models = {};
                 for (var i=0; i<result.data.length; i++) {
