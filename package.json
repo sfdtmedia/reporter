@@ -49,11 +49,11 @@
     "async": "*",
     "aws-sdk": "*",
     "fast-csv": "*",
-    "lodash": "^3.10.1"
+    "lodash": "*"
   },
   "devDependencies": {
     "body-parser": "~1.8.1",
     "express": "~4.9.0",
-    "ejs": "~2.3.1"
+    "ejs": "*"
   }
 }
