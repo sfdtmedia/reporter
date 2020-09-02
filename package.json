@@ -43,7 +43,7 @@
     "url": "https://github.com/18F/analytics-reporter/issues"
   },
   "dependencies": {
-    "googleapis": "^2.1.5",
+    "googleapis": "^59.0.0",
     "node-schedule": "^0.1.13",
     "minimist": "*",
     "async": "*",
